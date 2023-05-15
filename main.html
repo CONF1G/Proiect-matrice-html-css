@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Efect paralax*/
+.bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4,.bgimg-5,.bgimg-6,.bgimg-7 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Linkuri poze*/
+.bgimg-1 {
+  background-image: url('https://www.teahub.io/photos/full/49-493460_slide-wallpapers-geometric-desktop..jpg');
+  min-height: 100%;
+}
+
+
+.bgimg-2 {
+  background-image: url("https://www.teahub.io/photos/full/42-426305_dark-abstract-wallpaper-4k.jpg");
+  min-height: 400px;
+}
+
+
+.bgimg-3 {
+  background-image: url("https://www.teahub.io/photos/full/196-1965535_cyberpunk-city-wallpaper-sci-fi-city-night.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("https://www.teahub.io/photos/full/8-84680_4k-wallpapers-neon.jpg");
+  min-height: 400px;
+}
+
+
+.bgimg-5 {
+  background-image: url("https://www.teahub.io/photos/full/35-352575_neon-wallpaper-4k.jpg");
+  min-height: 400px;
+}
+
+
+.bgimg-6 {
+  background-image: url("https://www.teahub.io/photos/full/10-100807_neon-lights-4k-wallpapers-neon-wallpaper-4k.jpg");
+  min-height: 400px;
+}
+
+/* Formatare Bara navigare*/
+
+.w3-wide {letter-spacing: 15px;}
+.w3-hover-opacity {cursor: pointer;}
+
+
+</style>
+<body>
+
+<!-- bara de navigare -->
+<div class="w3-top">
+  <div class="w3-bar w3-center" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <a href="#EXEMPLU" class="w3-bar-item w3-button w3-hide-small"> EXEMPLU</a>
+    <a href="#DIAGONALA PRINCIPALĂ" class="w3-bar-item w3-button w3-hide-small"> DIAGONALA PRINCIPALĂ</a>
+    <a href="#DIAGONALA SECUNDARĂ" class="w3-bar-item w3-button w3-hide-small"> DIAGONALA SECUNDARĂ</a>
+    <a href="#ELEMENTE DELIMITATE DE DIAGONALA PRINCIPALĂ" class="w3-bar-item w3-button w3-hide-small"> ELEMENTE DELIMITATE DE DIAGONALA PRINCIPALĂ</a>
+    <a href="#ELEMENTE DELIMITATE DE DIAGONALA SECUNDARĂ" class="w3-bar-item w3-button w3-hide-small"> ELEMENTE DELIMITATE DE DIAGONALA SECUNDARĂ</a>
+    <a href="#ZONELE DELIMITATE DE DIAGONALE" class="w3-bar-item w3-button w3-hide-small"> ZONELE DELIMITATE DE DIAGONALE</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- bara de navigatie pe ecrane mici-->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#EXEMPLU" class="w3-bar-item w3-button" onclick="toggleFunction()">EXEMPLU</a>
+    <a href="#DIAGONALA PRINCIPALĂ" class="w3-bar-item w3-button" onclick="toggleFunction()">DIAGONALA PRINCIPALĂ</a>
+    <a href="#DIAGONALA SECUNDARĂ" class="w3-bar-item w3-button" onclick="toggleFunction()">DIAGONALA SECUNDARĂ</a>
+    <a href="#ELEMENTE DELIMITATE DE DIAGONALA PRINCIPALĂ" class="w3-bar-item w3-button" onclick="toggleFunction()">ELEMENTE DELIMITATE DE DIAGONALA PRINCIPALĂ</a>
+    <a href="#ELEMENTE DELIMITATE DE DIAGONALA SECUNDARĂ" class="w3-bar-item w3-button" onclick="toggleFunction()">ELEMENTE DELIMITATE DE DIAGONALA SECUNDARĂ</a>
+    <a href="#ZONELE DELIMITATE DE DIAGONALE" class="w3-bar-item w3-button" onclick="toggleFunction()">ZONELE DELIMITATE DE DIAGONALE</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- prima poza -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">TABLOURI <span class="w3-hide-small">PATRATICE</span> 
+  </div>
+</div>
+
+
+
+<!-- Tablouri patratice -->
+<div class="w3-content w3-container w3-padding-64" id="EXEMPLU">
+  <p>Un tablou bidimensional este <strong>tablou pătratic</strong> sau <strong>matrice pătratică</strong> dacă numărul de linii este egal cu numărul de coloane.</p>
+  <p>În această situație folosim pentru ambele dimensiuni o singură variabilă, de regulă <span style="color:red">n</span> :</p>
+  <p class="w3-gray">int n, A[100][100];</p>
+  <div class="w3-row">
+  
+    <div class="w3-center w3-padding-large">
+      <h3 class="w3-center">Exemplu:</h3>
+  
+    </div>
+    
+    
+     <div class="w3-row-padding w3-margin-top" >
+      <div class="w3-animate-bottom" >
+      <div class="w3-half">
+        <div class="w3-card"> 
+          <div class="w3-container">
+            <p class="w3-center"> Matrice pătratică indexată de la <span style="color:red">0</span> </p>
+          
+          </div>
+          <img src="https://www.pbinfo.ro/resurse/9dc152/articole/matrice/matrice-patratica-01-0.png?1"  style="width:100%">
+          <div class="w3-container">
+
+          </div>
+        </div>
+       </div>
+      </div>
+
+      <div class="w3-animate-bottom" >
+      <div class="w3-half">
+        <div class="w3-card">
+          <div class="w3-container">
+            <p class="w3-center">  Matrice pătratică indexată de la  <span style="color:red">1</span> </p>
+          
+          </div>
+          <img src="https://www.pbinfo.ro/resurse/9dc152/articole/matrice/matrice-patratica-01-1.png"  style="width:100%">
+          <div class="w3-container">
+            <p><pre> </pre></p>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+     <div class="w3-container">
+      <p>Într-o matrice pătratică se disting o categorie specială de elemente, diagonalele.
+         Un element al matricei aparține sau nu diagonalelor sau zonelor delimitate de acestea dacă respectă 
+         anumite reguli, în care intervin indicii elementului, nu valoarea elementului. În cele ce urmează,
+          pentru un element oarecare al matricei vom nota cu <span style="color:red">i</span> indicele de linie și cu <span style="color:red">j</span> indicele de coloană.</p>
+     </div>
+ 
+
+</div>
+
+<!-- Diagonala principală -->
+<div class="w3-content w3-container w3-padding-64" id="DIAGONALA PRINCIPALĂ">
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">DIAGONALA PRINCIPALĂ</span>
+  </div>
+</div>
+
+
+    
+    
+     <div class="w3-row-padding w3-margin-top" >
+      <div class="w3-animate-bottom" >
+      <div class="w3-half">
+        <div class="w3-card"> 
+          <div class="w3-container">
+            <p class="w3-center"> Indexare de la <span style="color:red">0</span> </p>
+          
+          </div>
+          <img src="https://www.pbinfo.ro/resurse/9dc152/articole/matrice/matrice-patratica-02-0.png"  style="width:100%">
+          <div class="w3-container">
+            <p  class="w3-center"><span style="color:red" >i = j</span></p>
+
+          </div>
+        </div>
+       </div>
+      </div>
+
+      <div class="w3-animate-bottom" >
+      <div class="w3-half">
+        <div class="w3-card">
+          <div class="w3-container">
+            <p class="w3-center">  Indexare de la  <span style="color:red">1</span> </p>
+          
+          </div>
+          <img src="https://www.pbinfo.ro/resurse/9dc152/articole/matrice/matrice-patratica-02-1.png"  style="width:100%">
+          <div class="w3-container">
+            <p><pre> </pre></p>
+            <p  class="w3-center"><span style="color:red" >i = j</span></p>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+     <div class="w3-container">
+      <p>Parcurgerea elementelor de pe diagonala principală:</p>
+     </div>
+     <div class="w3-container w3-gray">
+<p><pre>
+  for(int i = 0 ; i < n ; i ++)
+  {
+      // A[i][i]
+  }
+</pre></p>
+     </div>
+     
+     <!-- Diagonala secundară -->
+
+     <div class="w3-content w3-container w3-padding-64" id="DIAGONALA SECUNDARĂ">
+      <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+          <span class="w3-xxlarge w3-text-white w3-wide">DIAGONALA SECUNDARĂ</span>
+        </div>
+      </div>
+      
+      
+          
+          
+           <div class="w3-row-padding w3-margin-top" >
+            <div class="w3-animate-bottom" >
+            <div class="w3-half">
+              <div class="w3-card"> 
+                <div class="w3-container">
+                  <p class="w3-center"> Indexare de la <span style="color:red">0</span> </p>
+                
+                </div>
+                <img src="https://www.pbinfo.ro/resurse/9dc152/articole/matrice/matrice-patratica-03-0.png"  style="width:100%">
+                <div class="w3-container">
+                  <p  class="w3-center"><span style="color:red" >i + j = n + 1</span></p>
+      
+                </div>
+              </div>
+             </div>
+            </div>
+      
+            <div class="w3-animate-bottom" >
+            <div class="w3-half">
+              <div class="w3-card">
+                <div class="w3-container">
+                  <p class="w3-center">  Indexare de la  <span style="color:red">1</span> </p>
+                
+                </div>
+                <img src="https://www.pbinfo.ro/resurse/9dc152/articole/matrice/matrice-patratica-03-1.png"  style="width:100%">
+                <div class="w3-container">
+                  <p><pre> </pre></p>
+                  <p  class="w3-center"><span style="color:red" >i + j = n - 1</span></p>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+           <div class="w3-container">
+            <p>Parcurgerea elementelor de pe diagonala secundară:</p>
+           </div>
+           <div class="w3-container w3-gray">
+      <p><pre>
+//indexare de la 0
+for(int i = 0 ; i < n ; i ++)
+{
+    // A[i][n - 1 - i]
+}
+
+//indexare de la 1
+for(int i = 1 ; i <= n ; i ++)
+{
+    // A[i][n + 1 - i]
+} </pre></p>
+
+
+           </div>
+
+<!-- Observatie -->
+      <p><strong>Observatie: </strong> Dacă <span style="color:red" >n</span> este impar, cele două diagonale au un element comun. Dacă n este par, cele două diagonale nu au elemente comune.</p>     
+      <div class="w3-row-padding w3-margin-top" >
+        <div class="w3-animate-bottom" >
+        <div class="w3-half">
+          <div class="w3-card"> 
+            <div class="w3-container">
+             
+            
+            </div>
+            <img src="https://www.pbinfo.ro/resurse/9dc152/articole/matrice/matrice-patratica-08-impar.png"  style="width:100%">
+            <div class="w3-container">
+             
+  
+            </div>
+          </div>
+         </div>
+        </div>
+  
+        <div class="w3-animate-bottom" >
+        <div class="w3-half">
+          <div class="w3-card">
+            <div class="w3-container">
+            
+            </div>
+            <img src="https://www.pbinfo.ro/resurse/9dc152/articole/matrice/matrice-patratica-08-par.png"  style="width:100%">
+            <div class="w3-container">
+              <p><pre> </pre></p>
+              
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+<!-- ELEMENTE DELIMITATE DE DIAGONALA PRINCIPALĂ -->
+<div class="w3-content w3-container w3-padding-64" id="ELEMENTE DELIMITATE DE DIAGONALA PRINCIPALĂ">
+  <div class="bgimg-4 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">ELEMENTE DELIMITATE DE DIAGONALA PRINCIPALĂ</span>
+    </div>
+  </div>
+  
+  
+      
+  <div class="w3-container">
+    <h3 class="w3-center">Deasupra diagonalei</h3>
+  <div class="w3-row-padding w3-margin-top" >
+    <div class="w3-animate-bottom" >
+    <div class="w3-half">
+      <div class="w3-card"> 
+        <div class="w3-container">
+        <p class="w3-center">Indexare de la <span style="color: red";>0</span></p>
+        </div>
+        <img src="https://www.pbinfo.ro/resurse/9dc152/articole/matrice/matrice-patratica-04-0.png"  style="width:100%">
+        <div class="w3-container">
+         <div><pre></pre></div>
+
+        </div>
+      </div>
+     </div>
+    </div>
+
+    <div class="w3-animate-bottom" >
+    <div class="w3-half">
+      <div class="w3-card">
+        <div class="w3-container">
+          <p class="w3-center">Indexare de la <span style="color: red";>1</span></p>
+        </div>
+        
+        <img src="https://www.pbinfo.ro/resurse/9dc152/articole/matrice/matrice-patratica-04-1.png"  style="width:100%">
+        <div class="w3-container">
+          <p><pre> </pre></p>
+          
+         
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+<p class="w3-center w3-gray"> <span style="color: red";>i < j</span></p>
+
+
+  
+<div class="w3-container">
+<h3 class="w3-center">Sub diagonală</h3>
+<div class="w3-row-padding w3-margin-top" >
+<div class="w3-animate-bottom" >
+<div class="w3-half">
+  <div class="w3-card"> 
+    <div class="w3-container">
+    <p class="w3-center">Indexare de la <span style="color: red";>0</span></p>
+    </div>
+    <img src="https://www.pbinfo.ro/resurse/9dc152/articole/matrice/matrice-patratica-05-0.png"  style="width:100%">
+    <div class="w3-container">
+     <div><pre></pre></div>
+
+    </div>
+  </div>
+ </div>
+</div>
+
+<div class="w3-animate-bottom" >
+<div class="w3-half">
+  <div class="w3-card">
+    <div class="w3-container">
+      <p class="w3-center">Indexare de la <span style="color: red";>1</span></p>
+    </div>
+    
+    <img src="https://www.pbinfo.ro/resurse/9dc152/articole/matrice/matrice-patratica-05-1.png"  style="width:100%">
+    <div class="w3-container">
+      <p><pre> </pre></p>
+      
+     
+    </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+<p class="w3-center w3-gray"> <span style="color: red";>i > j</span></p>
+
+  </div>
+    </div>
+
+
+</div>
+
+</div>
+
+<!--Elementele delimitate de diagonala secundară -->
+
+    <div class="w3-content w3-container w3-padding-64" id="ELEMENTE DELIMITATE DE DIAGONALA SECUNDARĂ">
+      <div class="bgimg-5 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+          <span class="w3-xxlarge w3-text-white w3-wide">ELEMENTE DELIMITATE DE DIAGONALA SECUNDARĂ</span>
+        </div>
+      </div>
+      
+      
+          
+      <div class="w3-container">
+        <h3 class="w3-center">Deasupra diagonalei</h3>
+      <div class="w3-row-padding w3-margin-top" >
+        <div class="w3-animate-bottom" >
+        <div class="w3-half">
+          <div class="w3-card"> 
+            <div class="w3-container">
+            <p class="w3-center">Indexare de la <span style="color: red";>0</span></p>
+            </div>
+            <img src="https://www.pbinfo.ro/resurse/9dc152/articole/matrice/matrice-patratica-06-0.png"  style="width:100%">
+            <div class="w3-container">
+              <p class="w3-center w3-gray"> <span style="color: red";>i + j < n - 1</span></p>
+    
+            </div>
+          </div>
+         </div>
+        </div>
+    
+        <div class="w3-animate-bottom" >
+        <div class="w3-half">
+          <div class="w3-card">
+            <div class="w3-container">
+              <p class="w3-center">Indexare de la <span style="color: red";>1</span></p>
+            </div>
+            
+            <img src="https://www.pbinfo.ro/resurse/9dc152/articole/matrice/matrice-patratica-06-1.png"  style="width:100%">
+            <div class="w3-container">
+              <div><pre> 
+          
+              </pre></div>
+              <p class="w3-center w3-gray"> <span style="color: red";>i + j < n + 1</span></p>
+        
+              
+             
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  
+    
+   
+    </div>
+    
+    
+      
+    <div class="w3-container">
+    <h3 class="w3-center">Sub diagonală</h3>
+    <div class="w3-row-padding w3-margin-top" >
+    <div class="w3-animate-bottom" >
+    <div class="w3-half">
+      <div class="w3-card"> 
+        <div class="w3-container">
+        <p class="w3-center">Indexare de la <span style="color: red";>0</span></p>
+        </div>
+        <img src="https://www.pbinfo.ro/resurse/9dc152/articole/matrice/matrice-patratica-07-0.png"  style="width:100%">
+         <div>
+          <p class="w3-center w3-gray"> <span style="color: red";>i + j > n - 1</span></p>
+        </div>
+      </div>
+     </div>
+    </div>
+    
+    <div class="w3-animate-bottom" >
+    <div class="w3-half">
+      <div class="w3-card">
+        <div class="w3-container">
+          <p class="w3-center">Indexare de la <span style="color: red";>1</span></p>
+        </div>
+        
+        <img src="https://www.pbinfo.ro/resurse/9dc152/articole/matrice/matrice-patratica-07-1.png"  style="width:100%">
+        <div class="w3-container">
+        </div>
+        <div><pre> 
+          
+        </pre></div>
+        <p class="w3-center w3-gray"> <span style="color: red";>i + j > n + 1</span></p>
+        
+          </div>
+          
+         
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    
+  
+        </div>
+
+
+
+
+
+<!--ZONELE DELIMITATE DE DIAGONALE -->
+
+        <div class="w3-content w3-container w3-padding-64" id="ZONELE DELIMITATE DE DIAGONALE">
+          
+          <div class="bgimg-6 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle">
+              <span class="w3-xxlarge w3-text-white w3-wide">ZONELE DELIMITATE DE DIAGONALE</span>
+            </div>
+          </div>
+          <p>Cele două diagonale delimitează în matrice patru zone: <strong>, Est, Sud și Vest.</strong> Condițiile verificate de indicii elementelor din aceste zone sunt prezentate mai jos:</p>
+          
+              
+              
+               <div class="w3-row-padding w3-margin-top" >
+                <div class="w3-animate-bottom" >
+                <div class="w3-half">
+                   
+                 
+                    <img src="https://www.pbinfo.ro/resurse/9dc152/articole/matrice/matrice-patratica-09.png?1"  style="width:200%">
+                   
+                  
+                  
+                 </div>
+                </div>
+          
+         
+               
+               </div>
+
+
+
+ 
+<script>
+
+// schimaba formatarea barii de navigare
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Acceseaza meniul cand este apasat butonul pentru meniu
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+</script>
+
+</body>
+</html>
